@@ -1,0 +1,34 @@
+.w50
+{
+    width: 50%;
+}
+
+.w66
+{
+    width: 66.66%;
+}
+
+.w33
+{
+    width: 33.33%;
+}
+
+.left
+{
+    float: left;
+}
+
+.clear
+{
+    clear: both;
+}   
+
+.container
+{
+    margin: 15px;
+}
+
+.container img
+{
+    width: 100%;
+}

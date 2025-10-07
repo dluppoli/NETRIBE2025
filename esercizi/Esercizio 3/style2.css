@@ -1,0 +1,30 @@
+.w50
+{
+    width: 50%;
+}
+
+.w66
+{
+    width: 66.66%;
+}
+
+.w33
+{
+    width: 33.33%;
+}
+
+.flex
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container
+{
+    margin: 15px;
+}
+
+.container img
+{
+    width: 100%;
+}

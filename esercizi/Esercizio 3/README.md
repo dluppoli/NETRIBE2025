@@ -7,3 +7,7 @@
 
 ## Versione 2
 - Realizzare il medesimo layout utilizzando flex
+
+## Versione 3
+- Modificare uno dei due precedenti esercizi realizzando un layout responsive
+

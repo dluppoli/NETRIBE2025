@@ -18,6 +18,11 @@
     float: left;
 }
 
+.right
+{
+    float: right;
+}
+
 .clear
 {
     clear: both;
@@ -31,4 +36,25 @@
 .container img
 {
     width: 100%;
+}
+
+@media screen and (max-width: 800px)
+{
+    .w50
+    {
+        width: 100%;
+    }
+
+    .w50 .w50
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .w33, .w66, .w50, .w50 .w50
+    {
+        width: 100%;
+    }
 }

@@ -1,5 +1,5 @@
 //Dato il seguente array di stringhe, svolgere i seguenti 3 esercizi
-const cartoonCharacters = [
+let cartoonCharacters = [
   "Mickey Mouse", "Donald Duck", "Goofy", "Minnie Mouse", "Daisy Duck",
   "Pluto", "Bugs Bunny", "Daffy Duck", "Porky Pig", "Elmer Fudd",
   "Tweety", "Sylvester", "Road Runner", "Wile E. Coyote", "Yosemite Sam",
@@ -24,9 +24,42 @@ const cartoonCharacters = [
 ];
 
 //1 - Determinare se c'è un personaggio il cui nome completo è più corto di 5 caratteri (stampare true o false)
+let trovato=false;
+for(let i=0; i< cartoonCharacters.length /*&& !trovato*/; i++)
+{
+  if( cartoonCharacters[i].length < 5 ) 
+  {
+    trovato=true;
+    break;
+  }
+}
+console.log(trovato)
 
 //2 - Calcolare la somma delle lunghezze dei nomi dei personaggi (stampare il numero a video)
+let somma=0
+for(let character of cartoonCharacters)
+{
+  somma += character.length
+}
+console.log(somma);
 
 //3 - Identificare e stampare a video il personaggio con il nome più lungo
+let personaggioNomeLungo = cartoonCharacters[0]
+for(let character of cartoonCharacters)
+{
+  if( character.length > personaggioNomeLungo.length)
+    personaggioNomeLungo = character   
+}
+console.log(personaggioNomeLungo)
 
-//4 - Stampare tutti i personaggi della famiglia  Flintstone
+
+//4 - Stampare tutti i personaggi della famiglia Flintstone
+for(let character of cartoonCharacters)
+{
+  if( character.endsWith('Flintstone')) 
+    console.log(character) 
+}
+
+
+
+

@@ -26,22 +26,40 @@ let cartoonCharacters = [
 
 
 //1 - Ordinare in ordine alfabetico decrescente (e stampare su video)
+cartoonCharacters
+  .sort( (a, b) => a < b ? 1 : -1 )
+  .forEach( e => console.log(e) )
+
 
 //2 - Ordinare per lunghezza della stringa crescente (e stampare a video)
+cartoonCharacters
+  .sort( (a,b) => a.length - b.length  )
+  .forEach( e => console.log(e) )
+
 
 //3 - Determinare se c'è un personaggio il cui nome completo è più corto di 5 caratteri (stampare true o false)
+console.log( cartoonCharacters.some( e => e.length<5) )
+console.log( cartoonCharacters.find( e => e.length<5) != undefined )
 
 //4 - Stampare tutti i personaggi della famiglia Flintstone
+cartoonCharacters
+  .filter( e => e.endsWith('Flintstone') )
+  .forEach( e => console.log(e) )
 
 //5 - Creare un nuovo array che contiene tutti i nomi in lettere maiuscole (e stampare a video)
+cartoonCharacters
+  .map( e => e.toUpperCase() )
+  .forEach( e => console.log(e) )
 
 //6 - Calcolare la somma delle lunghezze dei nomi dei personaggi (usando reduce)
+console.log( cartoonCharacters.reduce( (t,e) => t + e.length, 0 ) )
+
 
 //7 - Identificare e stampare a video il personaggio con il nome più lungo
+console.log(cartoonCharacters.reduce( (t,e) => e.length > t.length ? e : t))
 
 
-
-
+console.log(cartoonCharacters.sort( (a,b) => b.length - a.length  )[0])
 
 
 

@@ -1,0 +1,1 @@
+Rifare l'esercizio 9 sostituendo la funzione eratostene() con la chiamata all'api https://eratosteneservice-18768020259.europe-west8.run.app/{n}/{soloprimi}

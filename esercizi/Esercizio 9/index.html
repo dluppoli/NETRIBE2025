@@ -8,9 +8,9 @@
 </head>
 <body>
     <h1>Crivello di Eratostene</h1>
-    <form>
-        <input type="number" name="n" id="n">
-        <input type="button" value="Calcola" onclick="calcola()">
+    <form onsubmit="calcola(); return false;">
+        <input type="number" name="n" id="n" required placeholder="inserire il numero per il calcolo">
+        <input type="submit" value="Calcola">
         <input type="button" value="Cancella" onclick="cancella()">
     </form>
 

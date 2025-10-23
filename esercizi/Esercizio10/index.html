@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Crivello di Eratostene</h1>
+    <form id="formEratostene" onsubmit="calcola(); return false;">
+        <input type="number" name="n" id="n" required placeholder="inserire il numero per il calcolo">
+        <label><input type="checkbox" name="soloprimi" id="soloprimi" onchange="calcola()">Solo numeri primi</label>
+        <input type="submit" value="Calcola">
+        <input type="button" value="Cancella" onclick="cancella()">
+    </form>
+
+    <div id="placeholder"></div>
+
+    <div class="footer">2025</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

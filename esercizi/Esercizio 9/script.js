@@ -47,3 +47,16 @@ function cancella()
 {
     document.getElementById('placeholder').innerHTML = ''
 }
+
+function calcola2()
+{
+    console.log('start')
+
+    fetch('https://eratosteneservice-18768020259.europe-west8.run.app/50/0')
+    .then(r => r.json() )
+    .then(b => b.filter(n => n.primo==true).forEach(element => {
+        console.log(element.numero)
+    }))
+
+    console.log('end')
+}

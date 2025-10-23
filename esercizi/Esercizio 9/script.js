@@ -24,7 +24,9 @@ function calcola()
  
     
     let ph = document.getElementById('placeholder')
-    
+    let soloPrimi = document.getElementById('soloprimi').checked
+
+
     //<div class="number primo/noprimo">3</div>
     let s = ""
     for(let i=1; i<risultato.length; i++)
@@ -35,7 +37,8 @@ function calcola()
         else
             ph.innerHTML += `<div class="number primo">${i}</div>`
         */
-       s += `<div class="number ${risultato[i] ? 'noprimo':'primo'}">${i}</div>`
+       if( risultato[i]==false || !soloPrimi )
+            s += `<div class="number ${risultato[i] ? 'noprimo':'primo'}">${i}</div>`
     }
     ph.innerHTML = s
 }

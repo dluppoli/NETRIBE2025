@@ -8,8 +8,9 @@
 </head>
 <body>
     <h1>Crivello di Eratostene</h1>
-    <form onsubmit="calcola(); return false;">
+    <form id="formEratostene" onsubmit="calcola(); return false;">
         <input type="number" name="n" id="n" required placeholder="inserire il numero per il calcolo">
+        <label><input type="checkbox" name="soloprimi" id="soloprimi" onchange="calcola()">Solo numeri primi</label>
         <input type="submit" value="Calcola">
         <input type="button" value="Cancella" onclick="cancella()">
     </form>

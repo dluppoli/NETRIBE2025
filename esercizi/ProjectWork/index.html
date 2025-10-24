@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body onload="loadBreeds()">
+    <h1>Dogs Breeds</h1>
+
+    <form onsubmit="searchBreeds();return false;">
+        <input type="text" placeholder="Breed Filter" name="breed">
+        <input type="hidden" name="page" value="1">
+        <input type="hidden" name="orderASC" value="1">
+    </form>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th onclick="toggleSort()">
+                    <div>Breed</div>
+                    <div>
+                        <i class="bi bi-sort-alpha-down d-none"></i>
+                        <i class="bi bi-sort-alpha-up"></i>
+                    </div>
+                </th>
+                <th>Life</th>
+                <th>Male Weight</th>
+                <th>Female Weight</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <div id="pagination"></div>
+    <div id="stats"></div>
+    <script src="script.js"></script>
+</body>
+</html>
